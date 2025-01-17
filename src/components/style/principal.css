@@ -1,0 +1,157 @@
+.principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background: var(--black-color);
+    overflow: hidden;
+}
+
+.contHero{
+    width: 100rem;
+    height: 50rem;
+    background: var(--principal-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+h1{
+    font-weight: 300;
+    color: var(--black-color);
+    font-size: 6rem;
+    text-align: center;
+    font-family: var(--safiro-font);
+}
+
+.textDos{
+    color: var(--gray-color);
+    font-weight: 300;
+}
+
+.busqueda{
+    background: var(--black-color);
+    color: var(--principal-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    margin: 2rem 0 0 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.busqueda:hover{
+    transform: scale(1.1);
+}
+
+.arrowLeft{
+    margin: 0 0 0 .5rem;
+    width: 2.5rem;
+}
+
+@media ((min-width: 851px) and (max-width: 1366px)) {
+
+    .principal{
+        padding: 5rem;    
+        overflow: hidden;
+    }
+    
+    .contHero{
+        width: 100%;
+        height: 90%;
+    }
+    
+    h1{
+        font-size: 5rem;
+    }
+    
+    .busqueda{
+        background: var(--black-color);
+        color: var(--principal-color);
+        font-size: 1.1rem;
+        font-weight: 300;
+        width: 19rem;
+        height: 4rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        margin: 2rem 0 0 0;
+    }
+    
+    .busqueda:hover{
+        transform: scale(1);
+    }
+    
+    .arrowLeft{
+        margin: 0 0 0 .5rem;
+        width: 1.5rem;
+    }
+
+}
+
+@media ((min-width: 481px) and (max-width: 850px)) {
+
+    h1{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .principal{
+        padding: 0;    
+        overflow: hidden;
+        display: flex;
+        align-items: end;
+    }
+    
+    .contHero{
+        width: 100%;
+        height: 90%;
+        border-radius: 2rem 2rem 0 0;
+        padding: 1rem;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+    
+    .busqueda{
+        background: var(--black-color);
+        color: var(--principal-color);
+        font-size: 1.1rem;
+        font-weight: 300;
+        width: 19rem;
+        height: 4rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        margin: 2rem 0 0 0;
+    }
+    
+    .busqueda:hover{
+        transform: scale(1);
+    }
+    
+    .arrowLeft{
+        margin: 0 0 0 .5rem;
+        width: 1.5rem;
+    }
+
+}
+
