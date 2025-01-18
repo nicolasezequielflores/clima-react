@@ -28,10 +28,10 @@ const Principal = () => {
 
   return (
     <div className="principal" id='principal'>
-        <div className="contHero" ref={efecto}>
-            <h1>Descubre el clima <span className='textDos'>en cualquier parte del mundo</span></h1>
-            <a href="#busqueda" className='busqueda'>Ir a consultar clima <img src="/arrow-left.svg" alt="flecha izquierda" className='arrowLeft'/> </a>
-        </div>
+      <div className="contHero" ref={efecto}>
+          <h1>Descubre el clima <span className='textDos'>en cualquier parte del mundo</span></h1>
+          <a href="#busqueda" className='busqueda'>Ir a consultar clima <img src="/arrow-left.svg" alt="flecha izquierda" className='arrowLeft'/> </a>
+      </div>
     </div>
   )
 }

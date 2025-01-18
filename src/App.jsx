@@ -1,12 +1,10 @@
 import './App.css'
-import Principal from './components/Principal'
-import Weather from './components/Weather'
+import Layout from './components/Layout'
 
 function App() {
   return (
     <div>
-      <Principal />
-      <Weather />
+      <Layout />
     </div>
   )
 }

@@ -1,43 +1,53 @@
 .datos{
     width: 100%;
-    min-height: 100vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     overflow-x: hidden;
     background: var(--black-color);
 }
 
+.card{
+    margin: 3rem 0;
+    width: 100%;
+    padding: 0 2rem;
+}
+
 .tit{
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .cont{
-    min-width: 40rem;
+    width: 100%;
     min-height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: var(--dark-color);
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 .buscadorCiudad{
-    min-width: 35rem;
-    height: 4rem;
+    width: 80%;
+    height: 3.5rem;
     padding: 1rem;
-    border-radius: 1rem;
     border: none;
     font-family: var(--poppins-font);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background: var(--dark-color);
     color: var(--principal-color);
+    outline: none;
+    border-radius: 2rem; 
 }
 
 .btnBuscar{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10rem;
     border: none;
     display: flex;
     align-items: center;
@@ -49,8 +59,9 @@
 }
 
 .error{
-    width: 40rem;
-    height: 2.5rem;
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     margin: 2rem 0;
     background: rgb(180, 13, 13);
@@ -63,7 +74,7 @@
 /*CARD DE DATOS*/
 
 .datosClima{
-    min-width: 40rem;
+    width: 100%;
     min-height: 30rem;
     background: var(--dark-color);
     display: flex;
@@ -152,65 +163,114 @@
     margin: 2rem 0;
 }
 
-
-
-@media (max-width: 480px) {
+@media ((min-width: 1601px) and (max-width: 1920px)) {
     
     .datos{
-        width: 100%;
+        padding: 0 40rem;
         min-height: 100vh;
-        padding: 5rem 2rem;
-        border-radius: 2rem 2rem 0 0;
-        min-height: 20rem;
-        justify-content: start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .tit{
-        margin: 1rem 0;
-        font-size: 2rem;
-    }
-    
-    .cont{
-        min-width: 100%;
-        min-height: 2.5rem;
-        gap: 1rem;
-    }
-    
+
     .buscadorCiudad{
-        min-width: 10rem;
-        height: 4rem;
-        padding: 1rem;
-        border-radius: 1rem;
-        border: none;
-        font-family: var(--poppins-font);
-        font-size: 1.1rem;
-        background: var(--dark-color);
-        color: var(--principal-color);
+        width: 90%;
+        height: 4.5rem;
     }
-    
+
     .btnBuscar{
-        width: 4rem;
-        height: 4rem;
-        border-radius: 2rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 10rem;
         border: none;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    .error{
-        width: 100%;
-        height: 3rem;
-        padding: 2rem;
-        font-weight: 500;
-        color: var(--principal-color);
-    }
-
-    /*CARD DE DATOS*/
 
     .datosClima{
-        min-width: 100%;
+        min-height: 35rem;
     }
 
+    .tit{
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
     
 }
+
+
+@media ((min-width: 1281px) and (max-width: 1600px)) {
+    
+    .datos{
+        padding: 0 30rem;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buscadorCiudad{
+        width: 90%;
+        height: 4.5rem;
+    }
+
+    .btnBuscar{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 10rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datosClima{
+        min-height: 35rem;
+    }
+
+    .tit{
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    
+    
+}
+
+@media ((min-width: 1000px) and (max-width: 1280px)) {
+
+    .datos{
+        padding: 0 20rem;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buscadorCiudad{
+        width: 90%;
+        height: 4.5rem;
+    }
+
+    .btnBuscar{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 10rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datosClima{
+        min-height: 35rem;
+    }
+
+    .tit{
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    
+    
+}
+

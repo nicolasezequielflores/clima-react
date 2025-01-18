@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 4rem;
     background: var(--black-color);
     overflow: hidden;
@@ -102,6 +103,20 @@ h1{
 }
 
 @media ((min-width: 481px) and (max-width: 850px)) {
+    .principal{
+        padding: 2rem;    
+        overflow: hidden;
+        display: flex;
+        align-items: end;
+    }
+    
+    .contHero{
+        width: 100%;
+        height: 70%;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
 
     h1{
         font-size: 4rem;
@@ -112,7 +127,7 @@ h1{
 @media (max-width: 480px) {
 
     .principal{
-        padding: 0;    
+        padding: 1rem;    
         overflow: hidden;
         display: flex;
         align-items: end;
@@ -120,8 +135,8 @@ h1{
     
     .contHero{
         width: 100%;
-        height: 90%;
-        border-radius: 2rem 2rem 0 0;
+        height: 70%;
+        border-radius: 2rem;
         padding: 1rem;
     }
     

@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Weather = () => {
     
+    //Efecto Scroll
     gsap.registerPlugin(ScrollTrigger);
     const efectoBusqueda = useRef();
 
@@ -28,6 +29,7 @@ const Weather = () => {
         )
     })
 
+    //API
     const [ciudad, setCiudad] = useState('');
     const [datosClima, setDatosClima] = useState(null);
     const [error, setError] = useState('');
@@ -56,6 +58,14 @@ const Weather = () => {
         }
     };
 
+    //Evento para buscar con "ENTER"
+    const envioEnter = (e) =>{
+        if(e.key === 'Enter'){
+            obtenerClima()
+        }
+       
+    }
+
     return (
         <div className="datos">
             <div className="card" ref={efectoBusqueda}>
@@ -69,6 +79,7 @@ const Weather = () => {
                     placeholder="Ingresa un ciudad"
                     value={ciudad}
                     onChange={(e) => setCiudad(e.target.value)}
+                    onKeyUp={envioEnter}
                     className="buscadorCiudad"
                     id="busqueda"
                 />
@@ -107,7 +118,6 @@ const Weather = () => {
                     </div>
                 </div>
             )}
-            {/*<p className="op">OpenWeather</p>*/}
             </div>
         </div>
     )
