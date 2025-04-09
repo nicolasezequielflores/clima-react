@@ -17,11 +17,3 @@ Este es un proyecto web desarrollado con React y Vite que permite buscar informa
 - **CSS**: Diseño estilizado y atractivo.
 - **API de OpenWeather**: Para obtener los datos climáticos en tiempo real.
 
-## Requisitos previos 📋
-
-Asegúrate de tener instalado:
-
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
-
-Además, necesitas una clave de API de OpenWeather. Puedes obtenerla [aquí](https://openweathermap.org/api).
