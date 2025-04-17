@@ -52,6 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .imgBuscar{
@@ -99,7 +100,6 @@
 .temp{
     font-size: 5rem;
 }
-
 
 /*UBICACIÓN*/
 
@@ -274,3 +274,23 @@
     
 }
 
+
+@media (prefers-color-scheme: light) {
+    
+    .datos{
+        background: var(--principal-color);
+    }
+
+    .tit{
+        color: var(--black-color);
+    }
+
+    .cont{
+        background: var(--black-color);
+    }
+
+    .buscadorCiudad{
+        background: var(--black-color);
+    }
+
+}

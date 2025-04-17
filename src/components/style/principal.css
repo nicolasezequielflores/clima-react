@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 10rem;
+    padding: 0 5rem;
 }
 
 h1{
@@ -170,3 +170,25 @@ h1{
 
 }
 
+@media (prefers-color-scheme: light) {
+    .principal{
+        background: var(--principal-color);
+    }
+
+    .contHero{
+        background: var(--black-color);
+    }
+
+    h1{
+        color: var(--principal-color);
+    }
+
+    .textDos{
+        color: var(--principal-color);
+    }
+
+    .busqueda{
+        background: var(--dark-color);
+    }
+
+}
