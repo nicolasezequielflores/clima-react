@@ -119,6 +119,10 @@
     gap: .1rem;
 }
 
+.ubiLogo{
+    width: 1rem;
+}
+
 .nombreCiudad{
     font-size: 1.3rem;
     font-weight: 500;
